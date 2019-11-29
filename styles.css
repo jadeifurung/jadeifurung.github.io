@@ -1,0 +1,322 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fdfffc;
+    color: #161925;
+    font-size: 1.25rem;
+}
+
+.header {
+    font-family: 'Varela Round', sans-serif;
+}
+
+footer,
+.navbar {
+    font-family: 'Varela Round', sans-serif;
+    background-color: #235789;
+    color: #fdfffc;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    font-family: 'Varela Round', sans-serif;
+    color: #fdfffc!important;
+    transform: color 500ms;
+}
+
+.icon-bar {
+	width: 25px; 
+	height: 2px;
+	background-color: #fdfffc;
+	display: block;
+	transition: all 0.2s;
+    margin-top: 5px;
+}
+
+.custom-navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border-radius: .25rem;
+    height: 40px;
+    width: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: none !important;
+}
+
+.navbar-light .custom-navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+
+.custom-navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+    
+.custom-navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.custom-navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.custom-navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.custom-navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.custom-navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+main {
+    position: relative;
+    top: 94px;
+    margin-bottom: 94px;
+}
+
+.hero-name,
+.email {
+    color: #c1292e;
+}
+
+.email {
+    font-weight: bold;
+}
+
+.jumbotron {
+    height: 80vh;
+    background-image: url('images/background-sm.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron h1 {
+    color: #161925;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.jumbotron .btn {
+    background-color: #161925;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fdfffc;
+    margin-top: 3%;
+}
+
+.anchor {
+    position: relative;
+}
+  
+.anchor a {
+    position: absolute;
+    left: 0;
+    top: -104px;
+}
+
+.section-header {
+    background-color: #161925;
+    color: #fdfffc;
+    font-size: 1.1rem;
+}
+
+.profile img {
+    width: 17rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3%;
+}
+
+.card {
+    background-color: #fdfffc;
+    border-color: #161925;
+    transform: scale(1, 1);
+    transition: transform 250ms;
+}
+
+.card-title {
+    color: #161925;
+}
+
+ .card-body a {
+    text-decoration: none;
+    color: #161925;
+    transition: color 500ms;
+}
+
+.github-link {
+    text-align: center;
+}
+
+@media (min-width: 770px) { 
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        font-size: 1.1rem;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .jumbotron {
+        background-image: url('images/background-md.jpg');
+    }
+
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+
+    .jumbotron .btn {
+        font-size: 1.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.7em;
+    }
+        
+    .profile {
+        width: 85%;
+    }
+
+    .profile img {
+        width: 16rem;
+        margin-bottom: 3%;
+    }
+
+    .card {
+        width: 25rem;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+
+    .card-body {
+        padding: 5%;
+        line-height: 1.5;
+    } 
+
+    .anchor a {
+        top: -104px;
+    }
+    
+}
+
+@media (min-width: 990px) { 
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+    }
+
+    .nav-link:hover {
+        color: #f1d302!important;
+    }
+
+    .jumbotron {
+        height: 95vh;
+        background-image: url('images/background-lg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .jumbotron h1 {
+        font-size: 3rem;
+    }
+
+    .jumbotron .btn {
+        font-size: 1.6rem;
+        transition: transform 250ms;
+    }
+
+    .jumbotron .btn:hover {
+        transform: scale(1.1, 1.1);
+    }
+
+    .profile {
+        max-width: 1000px;
+    } 
+    
+    .profile img {
+        width: 15rem;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 20rem;
+        margin: 0 auto;
+        font-size: 1rem;
+        background-color: #fdfffc;
+        border-color: #161925;
+        transform: scale(1, 1);
+        transition: transform 250ms;
+    }
+
+    .card:hover {
+        transform: scale(1.1, 1.1);
+    }
+
+    .card-title {
+        color: #161925;
+    }
+    
+     .card-body a {
+        text-decoration: none;
+        color: #161925;
+        transition: color 500ms;
+    }
+
+    .card-body a:hover {
+        color: #c1292e;
+    }
+
+    .anchor a {
+        top: -119px;
+    }
+}
