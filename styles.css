@@ -1,7 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 12px;
-    box-sizing: border-box;
 }
 
 body {
@@ -12,6 +17,8 @@ body {
 }
 
 header {
+    font-family: 'Varela Round', sans-serif;
+    background-color: #235789;
     border-bottom: 1px solid #fdfffc;
 }
 
@@ -19,12 +26,19 @@ header {
     font-family: 'Varela Round', sans-serif;
 }
 
-footer,
-.navbar {
-    font-family: 'Varela Round', sans-serif;
+footer {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #235789;
     color: #fdfffc;
-}
+    border-top: 1px solid #f5edda;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.2rem;
+  }
+
 
 .nav-link {
     font-family: 'Varela Round', sans-serif;
@@ -118,7 +132,6 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     margin: 0px;
     text-align: center;
     display: flex;
@@ -167,6 +180,7 @@ main {
 }
 
 .card {
+    width: 100%;
     background-color: #fdfffc;
     border-color: #161925;
     transform: scale(1, 1);
@@ -259,7 +273,6 @@ main {
 
     body {
         font-size: 1rem;
-        overflow-x: hidden;
     }
 
     .nav-link {
