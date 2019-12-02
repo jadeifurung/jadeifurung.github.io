@@ -117,13 +117,18 @@ main {
     margin-bottom: 6.8rem;
 }
 
-.hero-name,
-.email {
+.hero-name {
     color: #c1292e;
 }
 
 .email {
     font-weight: bold;
+    color: #c1292e;
+}
+
+.email:hover {
+    color: #c1292e;
+    text-decoration: none;
 }
 
 .jumbotron {
@@ -312,6 +317,11 @@ main {
 
     .jumbotron .btn:hover {
         transform: scale(1.1, 1.1);
+    }
+
+    .jumbotron .btn:visited {
+        color: #fdfffc!important;
+        background-color: #161925!important;
     }
 
     .profile img {
