@@ -9,10 +9,6 @@ html {
   font-size: 12px;
 }
 
-
-
-
-
 /* || General styles */
 
 body {
@@ -48,7 +44,7 @@ footer {
 
 .nav-link {
   font-family: 'Varela Round', sans-serif;
-  color: #fdfffc!important;
+  color: #fdfffc;
   transform: color 500ms;
 }
 
@@ -74,7 +70,10 @@ footer {
   align-items: center;
   justify-content: center;
   border-color: transparent;
-  outline: none !important;
+}
+
+.custom-navbar-toggler:focus {
+  outline: none;
 }
 
 .navbar-light .custom-navbar-toggler {
@@ -290,7 +289,7 @@ main {
   }
 
   .nav-link:hover {
-    color: #f1d302!important;
+    color: #f1d302;
   }
 
   main {
@@ -322,11 +321,6 @@ main {
 
   .jumbotron .btn:hover {
     transform: scale(1.1, 1.1);
-  }
-
-  .jumbotron .btn:visited {
-    color: #fdfffc!important;
-    background-color: #161925!important;
   }
 
   .profile img {
