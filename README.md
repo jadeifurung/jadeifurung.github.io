@@ -1,1 +1,2 @@
-# jadeifurung.github.io
+# Portfolio Website
+Website made responsive using Bootstrap.
