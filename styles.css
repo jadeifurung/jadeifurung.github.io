@@ -181,12 +181,21 @@ main {
   font-size: 1.1rem;
 }
 
-.profile img {
-  width: 17rem;
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 200px;
   height: auto;
-  display: block;
-  margin: 0 auto;
   margin-bottom: 3%;
+}
+
+.profile-text {
+  max-width: 550px;
 }
 
 .card {
@@ -249,15 +258,6 @@ main {
   .section-header h2 {
     font-size: 1.7em;
   }
-    
-  .profile {
-    width: 85%;
-  }
-
-  .profile img {
-    width: 16rem;
-    margin-bottom: 3%;
-  }
 
   .card {
     width: 25rem;
@@ -272,6 +272,11 @@ main {
 
   .anchor a {
     top: -6rem;
+  }
+
+  .profile {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -321,11 +326,6 @@ main {
 
   .jumbotron .btn:hover {
     transform: scale(1.1, 1.1);
-  }
-
-  .profile img {
-    width: 15rem;
-    margin: 0 auto;
   }
 
   .card {
