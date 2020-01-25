@@ -18,34 +18,27 @@ body {
   font-size: 1.25rem;
 }
 
-header {
+header,
+footer,
+.nav-link {
   font-family: 'Varela Round', sans-serif;
+}
+
+header {
   background-color: #235789;
   border-bottom: 1px solid #fdfffc;
 }
 
-.header {
-  font-family: 'Varela Round', sans-serif;
-}
-
 footer {
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #235789;
   color: #fdfffc;
-  border-top: 1px solid #f5edda;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 1.2rem;
+  border-top: 10px solid #f5edda;
+  font-size: 1rem;
+  padding: 2em 2em 1em;
 }
 
-
 .nav-link {
-  font-family: 'Varela Round', sans-serif;
   color: #fdfffc;
-  transform: color 500ms;
 }
 
 .icon-bar {
@@ -108,7 +101,6 @@ footer {
 }
 
 .navbar-collapse ul {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,7 +119,7 @@ main {
 }
 
 .email {
-  font-weight: bold;
+  font-weight: 700;
   color: #c1292e;
 }
 
@@ -137,8 +129,7 @@ main {
 }
 
 .jumbotron {
-  height: 80vh;
-  background-image: url('images/background-sm.jpg');
+  background-image: url('../images/background-sm.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -146,11 +137,12 @@ main {
   text-align: center;
   display: flex;
   align-items: center;
+  padding: 7em 2em;
 }
 
 .jumbotron h1 {
   color: #161925;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.5rem;
 }
 
@@ -237,6 +229,15 @@ main {
     font-size: 1.2rem;
   }
 
+  .nav-link {
+    transition: color 500ms;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #f1d302;
+  }
+
   main {
     position: relative;
     top: 6rem;
@@ -244,7 +245,7 @@ main {
   }
 
   .jumbotron {
-    background-image: url('images/background-md.jpg');
+    background-image: url('../images/background-md.jpg');
   }
 
   .jumbotron h1 {
@@ -293,18 +294,13 @@ main {
     font-size: 1.1rem;
   }
 
-  .nav-link:hover {
-    color: #f1d302;
-  }
-
   main {
     top: 5.5rem;
     margin-bottom: 5.5rem;
   }
 
   .jumbotron {
-    height: 95vh;
-    background-image: url('images/background-lg.jpg');
+    background-image: url('../images/background-lg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
